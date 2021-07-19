@@ -4,6 +4,7 @@
 [![docker-image-size](https://img.shields.io/docker/image-size/moonstarx/discord-music-24-7?logo=docker)](https://hub.docker.com/repository/docker/moonstarx/discord-music-24-7)
 [![docker-pulls](https://img.shields.io/docker/pulls/moonstarx/discord-music-24-7?logo=docker)](https://hub.docker.com/repository/docker/moonstarx/discord-music-24-7)
 
+![logo](https://i.imgur.com/5sjka8M.png)
 # d-radio
 
 A 24/7 music bot for Discord.
@@ -30,7 +31,7 @@ To self-host this bot, you'll need the following:
 In order to self-host this bot, first you'll need to clone this repository.
 
 ```text
-git clone https://github.com/moonstar-x/discord-music-24-7.git
+git clone https://github.com/LotharieSlayer/d-radio.git
 ```
 
 Once cloned, proceed to install the dependencies:
