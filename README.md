@@ -1,4 +1,4 @@
-[![discord](https://img.shields.io/discord/730998659008823296.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/esBwauN9eB)
+[![discord](https://img.shields.io/discord/826927909330616340.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/esBwauN9eB)
 [![ci-build-status](https://img.shields.io/github/workflow/status/moonstar-x/discord-music-24-7/CI?logo=github)](https://github.com/moonstar-x/discord-music-24-7)
 [![open-issues-count](https://img.shields.io/github/issues-raw/moonstar-x/discord-music-24-7?logo=github)](https://github.com/moonstar-x/discord-music-24-7)
 [![docker-image-size](https://img.shields.io/docker/image-size/moonstarx/discord-music-24-7?logo=docker)](https://hub.docker.com/repository/docker/moonstarx/discord-music-24-7)
