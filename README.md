@@ -5,9 +5,9 @@
 [![docker-image-size](https://img.shields.io/docker/image-size/moonstarx/discord-music-24-7?logo=docker)](https://hub.docker.com/repository/docker/moonstarx/discord-music-24-7)
 [![docker-pulls](https://img.shields.io/docker/pulls/moonstarx/discord-music-24-7?logo=docker)](https://hub.docker.com/repository/docker/moonstarx/discord-music-24-7)
 
-# discord-music-24-7
+# d-radio
 
-A 24/7 music bot for Discord that pauses when nobody is listening.
+A 24/7 music bot for Discord.
 
 ## Requirements
 
