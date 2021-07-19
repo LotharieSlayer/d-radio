@@ -7,7 +7,9 @@
 ![logo](https://i.imgur.com/5sjka8M.png)
 # d-radio
 
-A 24/7 music bot for [Discord](https://discord.gg/esBwauN9eB)
+A 24/7 music bot for [Discord](https://discord.gg/esBwauN9eB).
+
+**D-RADIO** (or Discord Radio) is a radio containing mostly a fairly large music library in a certain theme. Each D-radio has its own library thus giving it a personality in which the public can find themselves, and play songs continuously 24/24h.
 
 ## Requirements
 
