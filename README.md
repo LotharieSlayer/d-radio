@@ -7,7 +7,7 @@
 ![logo](https://i.imgur.com/5sjka8M.png)
 # d-radio
 
-A 24/7 music bot for Discord.
+A 24/7 music bot for [Discord](https://discord.gg/esBwauN9eB)
 
 ## Requirements
 
