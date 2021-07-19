@@ -10,10 +10,10 @@ class ExtendedCommand extends Command {
     this.emoji = options.emoji;
   }
 
-  onError(err, message, ags, fromPattern, result) {
+  /*onError(err, message, ags, fromPattern, result) {
     this.client.handleCommandError(err, `An error occurred when running the command **${this.name}** in **${message.guild?.name || 'DM'}**. Triggering message: **${message.content}**`);
     return message.reply('Something wrong happened when executing this command.');
-  }
+  }*/
 
   run(message, args, fromPattern, result) {
     logger.info(`User ${message.member?.displayName || message.author.username} executed ${this.name} from ${message.guild?.name || 'DM'}.`);
