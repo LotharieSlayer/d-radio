@@ -1,7 +1,6 @@
-/* eslint-disable no-new */
-import fs from 'fs';
-import Queue from '../../src/classes/Queue';
-import MissingArgumentError from '../../src/classes/errors/MissingArgumentError';
+const fs = require('fs');
+const Queue = require('../../src/classes/Queue');
+const DataFolderManager = require('../../src/classes/DataFolderManager');
 
 jest.mock('fs');
 
@@ -18,6 +17,9 @@ const mockedMusicDirectory = [
 ];
 
 describe('Classes - Queue', () => {
+  const dataFolderManager = new DataFolderManager({
+    dataPath: '.'
+  });
   let queue;
 
   beforeAll(() => {
@@ -27,17 +29,11 @@ describe('Classes - Queue', () => {
 
   beforeEach(() => {
     fs.readFileSync.mockClear();
-    queue = new Queue('filename', 'musicDir');
+    queue = new Queue(dataFolderManager);
   });
 
-  it('should throw MissingArgumentError if no queueFilename is provided.', () => {
-    expect(() => {
-      new Queue();
-    }).toThrow(MissingArgumentError);
-  });
-
-  it('should have an index property initialized to 0.', () => {
-    expect(queue.index).toBe(0);
+  it('should have an currentIndex property initialized to 0.', () => {
+    expect(queue.currentIndex).toBe(0);
   });
 
   it('should have a queue property.', () => {
@@ -48,8 +44,8 @@ describe('Classes - Queue', () => {
     expect(queue.queue).toHaveLength(4);
     expect(queue.queue).toContain('https://www.youtube.com/watch?v=PYGODWJgR-c');
     expect(queue.queue).toContain('https://youtu.be/PYGODWJgR-c');
-    expect(queue.queue).toContain('local:musicDir/song1.mp3');
-    expect(queue.queue).toContain('local:musicDir/song2.m4a');
+    expect(queue.queue).toContain('local:local-music/song1.mp3');
+    expect(queue.queue).toContain('local:local-music/song2.m4a');
   });
 
   describe('getNext()', () => {
@@ -65,6 +61,18 @@ describe('Classes - Queue', () => {
 
         expect(next).toBe(queue.queue[i % queue.queue.length]);
       }
+    });
+  });
+
+  describe('getSize()', () => {
+    it('should return the length of the queue.', () => {
+      expect(queue.getSize()).toBe(queue.queue.length);
+    });
+  });
+
+  describe('getCurrentIndex()', () => {
+    it('should return the currentIndex.', () => {
+      expect(queue.getCurrentIndex()).toBe(queue.currentIndex);
     });
   });
 });
