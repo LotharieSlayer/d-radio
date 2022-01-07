@@ -1,1 +1,1 @@
-//Your Youtube/Soundcloud links, if you want to use API from these providers.
+// Youtube/SoundCloud links
